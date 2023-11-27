@@ -1,0 +1,36 @@
+{
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "api": "readonly",
+    "application": "readonly",
+    "db": "readonly",
+    "common": "readonly",
+    "buffer": "readonly",
+    "config": "readonly",
+    "domain": "readonly",
+    "lib": "readonly",
+    "authz": "readonly",
+    "context": "readonly",
+    "metarhia": "readonly"
+  },
+  "rules": {
+    "strict": ["error", "never"],
+    "id-denylist": [
+      2,
+      "application",
+      "api",
+      "db",
+      "common",
+      "console",
+      "metasql",
+      "context",
+      "node",
+      "npm",
+      "metarhia",
+      "authz"
+      // "metautil"
+    ]
+  }
+}
