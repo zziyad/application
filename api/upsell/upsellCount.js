@@ -1,7 +1,7 @@
 ({
   access: 'public',
   method: async (month, vLevel) => {
-    console.log({ month, vLevel });
+   
     const { getUpsellCount } = domain.upsell;
 
     try {

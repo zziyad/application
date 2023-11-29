@@ -1,8 +1,9 @@
 node_modules
 /log/
-/application/resources/*
+files/
 *.log
 *.done
 *.pem
 .DS_Store
 data/
+

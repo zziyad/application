@@ -1,8 +1,7 @@
 ({
   access: 'public',
   method: async ({ from, to, verificationLevel }) => {
-    console.log('EXPORT api');
-    console.log({ verificationLevel });
+  
     const query = await db.pg.sql`
         SELECT
           ur.type,

@@ -6,14 +6,7 @@ async (
   selectedMonth,
   selectedType,
 ) => {
-  console.log({
-    pageNumber,
-    pageSize,
-    verificationLevel,
-    status,
-    selectedMonth,
-    selectedType,
-  });
+
   try {
     const result = await db.pg.query(
       'SELECT * FROM get_paginated_upsell_reports($1, $2, $3, $4, $5, $6)',

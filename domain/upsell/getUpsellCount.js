@@ -5,8 +5,6 @@ async (month, vLevel) => {
       [month, vLevel],
     );
 
-    console.log({ res: result.rows });
-
     return result.rows;
   } catch (error) {
     console.log({ error });
